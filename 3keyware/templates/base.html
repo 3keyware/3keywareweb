@@ -54,8 +54,108 @@
         </div>
     </nav>
 
+    !-- Floating Social Media -->
+    <div class="floating-social">
+        <a href="https://instagram.com/3keyware" target="_blank" class="floating-social-link" style="background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://linkedin.com/company/3keyware" target="_blank" class="floating-social-link" style="background: #0077b5;">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:3keyware@gmail.com" class="floating-social-link" style="background: #6c757d;">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://github.com/3keyware" target="_blank" class="floating-social-link" style="background: #333;">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
 
     {% block content %}{% endblock %}
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="footer-title">
+                        <span class="text-primary">3key</span>ware
+                    </h5>
+                    <p class="footer-description">
+                       Yenilikçi web geliştirme, mobil uygulamalar ve sürükleyici oyun deneyimleriyle fikirleri dijital gerçekliğe dönüştürüyoruz.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/3keyware" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/company/3keyware" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:3keyware@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/3keyware" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="footer-heading">Servisler</h6>
+                    <ul class="footer-links">
+                        <li><a href="{{ url_for('services') }}">Web Development</a></li>
+                        <li><a href="{{ url_for('services') }}">Mobil Uygulamalar</a></li>
+                        <li><a href="{{ url_for('services') }}">Oyun Geliştirme</a></li>
+                        <li><a href="{{ url_for('pricing') }}">Ücretler</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="footer-heading">Şirket</h6>
+                    <ul class="footer-links">
+                        <li><a href="{{ url_for('about') }}">Hakkımızda</a></li>
+                        <li><a href="{{ url_for('portfolio') }}">Portföy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="footer-heading">Destek</h6>
+                    <ul class="footer-links">
+                        <li><a href="{{ url_for('contact') }}">Bizimle iletişime geçin</a></li>
+                        <li><a href="{{ url_for('live_chat') }}">Canlı Sohbet</a></li>
+                        <li><a href="{{ url_for('quote') }}">Teklif yapın</a></li>
+                        <li><a href="mailto:support@3keyware.com">Destek</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="footer-heading">Legal</h6>
+                    <ul class="footer-links">
+                        <li><a href="{{ url_for('privacy_policy') }}">Privacy Policy</a></li>
+                        <li><a href="{{ url_for('terms_of_service') }}">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="footer-copyright">&copy; 2025 3keyware. Tüm haklar saklıdır.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="footer-tagline">Fikirlerinizi dijital gerçekliğe dönüştürün</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Chat Widget -->
+    <div id="chatWidget" class="chat-widget">
+        <div class="chat-widget-toggle" onclick="toggleChat()">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chat-widget-content" id="chatWidgetContent">
+            <div class="chat-widget-header">
+                <h6>Need Help?</h6>
+                <button class="chat-close" onclick="toggleChat()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-widget-body">
+                <p>Merhaba! Bugün nasıl yardımcı olabilirim?</p>
+                <div class="chat-options">
+                    <a href="{{ url_for('contact') }}" class="chat-option">Bizimle iletişime geçin</a>
+                    <a href="{{ url_for('quote') }}" class="chat-option">Teklif yapın</a>
+                    <a href="{{ url_for('live_chat') }}" class="chat-option">Canlı Sohbet</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -64,8 +164,17 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
 
+
     <script src="{{ url_for('static', filename='js/particles.js') }}"></script>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+
+    <script>
+        function toggleChat() {
+            const content = document.getElementById('chatWidgetContent');
+            content.classList.toggle('active');
+        }
+    </script>
 
     {% block scripts %}{% endblock %}
 </body>

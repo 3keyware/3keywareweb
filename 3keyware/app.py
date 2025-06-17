@@ -139,5 +139,26 @@ def project_detail(project_id):
 def pricing():
     return render_template('pricing.html')
 
+
+@app.route('/api/newsletter', methods=['POST'])
+def newsletter_signup():
+    email = request.form.get('email')
+    if email:
+
+        return {'status': 'success', 'message': 'Successfully subscribed to newsletter!'}
+    return {'status': 'error', 'message': 'Invalid email address'}
+@app.route('/live-chat')
+def live_chat():
+    return render_template('live_chat.html')
+@app.route('/privacy-policy')
+def privacy_policy():
+    return render_template('privacy_policy.html')
+@app.route('/terms-of-service')
+def terms_of_service():
+    return render_template('terms_of_service.html')
+@app.route('/quote')
+def quote():
+    return redirect(url_for('contact'))
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5001, debug=True)
