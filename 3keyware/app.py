@@ -1,5 +1,6 @@
 import os
-from flask import Flask, render_template
+from flask import Flask, render_template, request, flash, redirect, url_for
+
 
 
 app = Flask(__name__)
@@ -11,8 +12,8 @@ portfolio_projects = [
         'id': 1,
         'name': 'Kuponperest',
         'category': 'Web Design',
-        'technology': 'Python & Html',
-        'image': 'https://pixabay.com/get/g703ed4e6f100438c43806858bf03c6a9d1ed94b316e8dcf474be36b24b36db5607823e806eef8a04688e16986f1645cbcde0df5e8af6e3acf1c87b21539e24fc_1280.jpg',
+        'technology': 'Python & Html & JS',
+        'image': 'https://lh3.googleusercontent.com/a/ACg8ocLfaXtUHCwZ2hUOfQ0_-jfjDg8wx99v5SIL5uDZQk-o1j-R_6s=s576-c-no',
         'description': 'Yapay zeka tabanlı kupon tahmin sitesi'
     },
     {
@@ -84,6 +85,59 @@ portfolio_projects = [
 @app.route('/')
 def index():
     return render_template('index.html', projects=portfolio_projects)
+
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+
+@app.route('/services')
+def services():
+    return render_template('services.html')
+
+
+@app.route('/contact', methods=['GET', 'POST'])
+def contact():
+    if request.method == 'POST':
+        name = request.form.get('name')
+        email = request.form.get('email')
+        message = request.form.get('message')
+
+        if name and email and message:
+            # In a real application, save to database or send email
+            flash('Thank you for your message! We will get back to you soon.', 'success')
+            return redirect(url_for('contact'))
+        else:
+            flash('Please fill in all fields.', 'error')
+
+    return render_template('contact.html')
+
+
+@app.route('/portfolio')
+def portfolio():
+    category = request.args.get('category', 'all')
+    if category == 'all':
+        filtered_projects = portfolio_projects
+    else:
+        filtered_projects = [p for p in portfolio_projects if p['category'] == category]
+
+    return render_template('portfolio.html', projects=filtered_projects, current_category=category)
+
+
+@app.route('/project/<int:project_id>')
+def project_detail(project_id):
+    project = next((p for p in portfolio_projects if p['id'] == project_id), None)
+    if not project:
+        flash('Project not found.', 'error')
+        return redirect(url_for('portfolio'))
+
+    return render_template('project_detail.html', project=project)
+
+
+@app.route('/pricing')
+def pricing():
+    return render_template('pricing.html')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5001, debug=True)

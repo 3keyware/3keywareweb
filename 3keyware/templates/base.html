@@ -32,16 +32,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                       <a  class="nav-link" href="{{ url_for('index') }}">Ana sayfa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
+                      <a  class="nav-link" href="{{ url_for('about') }}">Hakkımızda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                       <a  class="nav-link" href="{{ url_for('services') }}">Hizmetler</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                       <a  class="nav-link" href="{{ url_for('portfolio') }}">Portföy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('pricing') }}">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('contact') }}">İletişim</a>
                     </li>
                 </ul>
             </div>

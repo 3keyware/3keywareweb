@@ -1,0 +1,176 @@
+{% extends "base.html" %}
+
+{% block title %}Bize Ulaşın - 3keyware{% endblock %}
+
+{% block content %}
+<section class="contact-hero-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="section-title mb-4">İletişime <span class="text-primary">Geçin</span></h1>
+                <p class="lead">Dijital vizyonunuzu hayata geçirmeye hazır mısınız? Projenizi görüşelim ve hedeflerinize ulaşmanıza nasıl yardımcı olabileceğimizi keşfedelim.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-form-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        {% for category, message in messages %}
+                            <div class="alert alert-{{ 'success' if category == 'success' else 'danger' }} alert-dismissible fade show" role="alert">
+                                {{ message }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+
+                <div class="contact-form-card">
+                    <form method="POST" action="{{ url_for('contact') }}">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Ad Soyad</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">E-posta Adresi</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="subject" class="form-label">Konu</label>
+                                    <select class="form-control" id="subject" name="subject">
+                                        <option value="general">Genel Soru</option>
+                                        <option value="web">Web Geliştirme</option>
+                                        <option value="mobile">Mobil Geliştirme</option>
+                                        <option value="game">Oyun Geliştirme</option>
+                                        <option value="support">Destek</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Mesajınız</label>
+                                    <textarea class="form-control" id="message" name="message" rows="6" placeholder="Bize projenizden bahsedin..." required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary btn-lg px-5">
+                                    <i class="fas fa-paper-plane me-2"></i>Mesajı Gönder
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-info-section py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="contact-info-card text-center">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h5>Bize E-posta Gönderin</h5>
+                    <p>3keyware.com<br>info@3keyware.com</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="contact-info-card text-center">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h5>Bizi Arayın</h5>
+                    <p>+90 (506) 151-7895<br>+1 (555) 987-6543</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="contact-info-card text-center">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h5>Bizi Ziyaret Edin</h5>
+                    <p>İzmir Ekonomi Üniversitesi<br>Balçova, İzmir</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="faq-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center mb-5">
+                <h2 class="section-title">Sıkça Sorulan Sorular (SSS)</h2>
+                <p class="section-subtitle">Sıkça sorulan sorulara hızlı yanıtlar</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                Tipik bir proje ne kadar sürer?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Proje süreleri, projenin kapsamına ve karmaşıklığına bağlı olarak değişir. Basit web siteleri genellikle 2-4 hafta sürerken, karmaşık web uygulamaları veya mobil uygulamalar 8-16 hafta sürebilir. İlk danışmanlık görüşmemizde detaylı zaman çizelgeleri sunuyoruz.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                Geliştirme süreciniz nasıl işliyor?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Düzenli müşteri geri bildirimlerini içeren çevik (agile) bir geliştirme metodolojisi izliyoruz. Sürecimiz şunları içerir: keşif ve planlama, tasarım ve prototipleme, geliştirme ve test, yayınlama ve sürekli destek.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                Sürekli destek sağlıyor musunuz?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Evet, kapsamlı destek ve bakım paketleri sunuyoruz. Bu paketler, dijital çözümünüzün sorunsuz çalışmasını sağlamak için hata düzeltmeleri, güvenlik güncellemeleri, performans optimizasyonu ve özellik geliştirmelerini içerir.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                Hangi teknolojilerle çalışıyorsunuz?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Ön yüz (frontend) için React, Vue.js, Angular; arka yüz (backend) için Node.js, Python, PHP; mobil için React Native ve Flutter; oyunlar için ise Unity/Unreal Engine dahil olmak üzere modern teknolojilerle çalışıyoruz.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
