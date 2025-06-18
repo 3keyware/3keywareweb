@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bize Ulaşın - 3keyware</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="static/css/style.css" />
+</head>
+<body>
+
+<section class="contact-hero-section py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <h1 class="section-title mb-4">İletişime <span class="text-primary">Geçin</span></h1>
+        <p class="lead">Dijital vizyonunuzu hayata geçirmeye hazır mısınız? Projenizi görüşelim ve hedeflerinize ulaşmanıza nasıl yardımcı olabileceğimizi keşfedelim.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-form-section py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="contact-form-card">
+          <form method="POST" action="contact.html">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="name" class="form-label">Ad Soyad</label>
+                  <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="email" class="form-label">E-posta Adresi</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="subject" class="form-label">Konu</label>
+                  <select class="form-control" id="subject" name="subject">
+                    <option value="general">Genel Soru</option>
+                    <option value="web">Web Geliştirme</option>
+                    <option value="mobile">Mobil Geliştirme</option>
+                    <option value="game">Oyun Geliştirme</option>
+                    <option value="support">Destek</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="message" class="form-label">Mesajınız</label>
+                  <textarea class="form-control" id="message" name="message" rows="6" placeholder="Bize projenizden bahsedin..." required></textarea>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary btn-lg px-5">
+                  <i class="fas fa-paper-plane me-2"></i>Mesajı Gönder
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-info-section py-5">
+  <div class="container">
+    <div class="row g-4 text-center">
+      <div class="col-lg-4 col-md-6">
+        <div class="contact-info-card">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <h5>Bize E-posta Gönderin</h5>
+          <p>3keyware.com<br>info@3keyware.com</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="contact-info-card">
+          <div class="contact-icon"><i class="fas fa-phone"></i></div>
+          <h5>Bizi Arayın</h5>
+          <p>+90 (506) 151-7895<br>+1 (555) 987-6543</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="contact-info-card">
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <h5>Bizi Ziyaret Edin</h5>
+          <p>İzmir Ekonomi Üniversitesi<br>Balçova, İzmir</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="social-media-section py-5">
+  <div class="container text-center">
+    <h3 class="mb-4">Bizi sosyal medyadan takip edin</h3>
+    <div class="social-media-links">
+      <a href="https://instagram.com/3keyware" target="_blank" class="social-link instagram">
+        <i class="fab fa-instagram"></i><span>Instagram</span>
+      </a>
+      <a href="https://linkedin.com/company/3keyware" target="_blank" class="social-link linkedin">
+        <i class="fab fa-linkedin"></i><span>LinkedIn</span>
+      </a>
+      <a href="mailto:3keyware@gmail.com" class="social-link email">
+        <i class="fas fa-envelope"></i><span>E-posta</span>
+      </a>
+      <a href="https://github.com/3keyware" target="_blank" class="social-link github">
+        <i class="fab fa-github"></i><span>GitHub</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Sıkça Sorulan Sorular (SSS)</h2>
+      <p class="section-subtitle">Sıkça sorulan sorulara hızlı yanıtlar</p>
+    </div>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+            Tipik bir proje ne kadar sürer?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Proje süresi kapsam ve karmaşıklığa göre değişir. Basit projeler 2–4 hafta, büyük projeler 8–16 hafta sürebilir.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+            Geliştirme süreciniz nasıl işliyor?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Keşif → Tasarım → Geliştirme → Yayınlama → Sürekli destek adımlarıyla ilerliyoruz.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+            Sürekli destek sağlıyor musunuz?
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Evet, bakım paketleri ile yazılımınızın sağlıklı kalmasını sağlıyoruz.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+            Hangi teknolojilerle çalışıyorsunuz?
+          </button>
+        </h2>
+        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            React, Vue, Angular, Node.js, Python, Flutter, Unity gibi modern teknolojilerle projeler geliştiriyoruz.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
