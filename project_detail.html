@@ -3,11 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Smart Web Dashboard - 3keyware</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="static/js/bootstrap.bundle.min.js" defer></script>
 </head>
 <body>
 
-<!-- Project Hero Section -->
+<!-- Hero Section -->
 <section class="project-hero-section py-5">
   <div class="container">
     <div class="row align-items-center">
@@ -18,71 +22,60 @@
           <p class="project-description lead mb-4">İş zekası için etkileşimli gösterge tabloları ve modern UI bileşenleri.</p>
           <div class="project-tech-stack">
             <h6>Technology Stack:</h6>
-            <span class="tech-badge">React, Flask, PostgreSQL</span>
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">Flask</span>
+            <span class="tech-badge">PostgreSQL</span>
           </div>
         </div>
       </div>
       <div class="col-lg-6">
         <div class="project-main-image">
-          <img src="assets/images/project-dashboard.png" alt="Smart Web Dashboard" class="img-fluid">
+          <img src="static/images/project-dashboard.png" alt="Smart Web Dashboard" class="img-fluid">
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Project Details Section -->
+<!-- Project Details -->
 <section class="project-details-section py-5">
   <div class="container">
     <div class="row">
       <div class="col-lg-8">
         <div class="project-content">
           <h2 class="section-title mb-4">Projeye Genel Bakış</h2>
-
           <p>Bu web geliştirme projesi, olağanüstü kullanıcı deneyimleri sunan modern, duyarlı web siteleri oluşturma konusundaki uzmanlığımızı sergiliyor. Performans optimizasyonuna, mobil duyarlılığa ve sezgisel kullanıcı arayüzü tasarımına odaklandık.</p>
 
-          <h4 class="mt-4 mb-3">Key Features</h4>
+          <h4 class="mt-4 mb-3">Öne Çıkan Özellikler</h4>
           <ul class="feature-list">
-            <li>Tüm cihazlarda mükemmel şekilde çalışan duyarlı tasarım</li>
-            <li>Optimize edilmiş performansla hızlı yükleme süreleri</li>
-            <li>Son trendleri takip eden modern UI/UX tasarımı</li>
-            <li>Daha iyi arama motoru görünürlüğü için SEO optimize edildi</li>
-            <li>Tarayıcılar arası uyumluluk</li>
-            <li>İçerik yönetim sistemi entegrasyonu</li>
+            <li>Duyarlı tasarım</li>
+            <li>Hızlı yükleme süresi</li>
+            <li>Modern UI/UX</li>
+            <li>SEO uyumluluğu</li>
+            <li>Tarayıcı uyumluluğu</li>
+            <li>CMS entegrasyonu</li>
           </ul>
 
           <h4 class="mt-4 mb-3">Geliştirme Süreci</h4>
-          <p>Bu proje için geliştirme yaklaşımımız, düzenli müşteri geri bildirim oturumlarıyla çevik metodolojileri takip etti. Kapsamlı gereksinim analiziyle başladık, ardından tasarım maketleri, yinelemeli geliştirme ve kapsamlı test aşamaları izledik</p>
+          <p>Agile metodolojisi ile müşteri geri bildirimleri doğrultusunda sürekli iyileştirme yapıldı. Tasarım mockup'ları, iteratif geliştirme ve testler ile proje tamamlandı.</p>
 
           <h4 class="mt-4 mb-3">Sonuçlar</h4>
-          <p>Proje zamanında teslim edildi ve müşteri beklentilerini aştı. Çözüm son kullanıcılar tarafından iyi karşılandı ve müşterinin iş hedeflerine önemli ölçüde katkıda bulundu.</p>
+          <p>Proje zamanında tamamlandı ve müşteri memnuniyeti sağlandı. Son kullanıcı deneyimi güçlü ve hızlıydı.</p>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="project-sidebar">
           <div class="project-info-card">
             <h5>Proje Bilgileri</h5>
-            <div class="info-item">
-              <span class="info-label">Kategori:</span>
-              <span class="info-value">Web Design</span>
-            </div>
-            <div class="info-item">
-              <span class="info-label">Teknoloji:</span>
-              <span class="info-value">React, Flask, PostgreSQL</span>
-            </div>
-            <div class="info-item">
-              <span class="info-label">Süre:</span>
-              <span class="info-value">8-12 hafta</span>
-            </div>
-            <div class="info-item">
-              <span class="info-label">Takım Genişliği:</span>
-              <span class="info-value">3-5 developers</span>
-            </div>
+            <div class="info-item"><span class="info-label">Kategori:</span> Web Design</div>
+            <div class="info-item"><span class="info-label">Teknoloji:</span> React, Flask, PostgreSQL</div>
+            <div class="info-item"><span class="info-label">Süre:</span> 8-12 hafta</div>
+            <div class="info-item"><span class="info-label">Takım:</span> 3-5 geliştirici</div>
           </div>
 
-          <div class="project-cta-card">
+          <div class="project-cta-card mt-4">
             <h5>Benzer Projelerle İlgileniyor musunuz?</h5>
-            <p>Harika bir şey yaratmanıza nasıl yardımcı olabileceğimizi tartışalım.</p>
+            <p>Harika bir şey yaratmamıza nasıl yardımcı olabileceğimizi konuşalım.</p>
             <a href="contact.html" class="btn btn-primary w-100">
               <i class="fas fa-comment me-2"></i>Tartışmayı Başlat
             </a>
@@ -93,25 +86,24 @@
   </div>
 </section>
 
-<!-- Related Projects Section -->
-<section class="related-projects-section py-5">
+<!-- Related Projects -->
+<section class="related-projects-section py-5 bg-light">
   <div class="container">
-    <div class="row">
-      <div class="col-12 mb-5">
-        <h2 class="section-title text-center">İlgili Projeler</h2>
-        <p class="section-subtitle text-center">Daha fazla projeyi keşfedin Web Design</p>
+    <div class="row mb-5">
+      <div class="col-12 text-center">
+        <h2 class="section-title">İlgili Projeler</h2>
+        <p class="section-subtitle">Daha fazla Web Design projesi keşfedin</p>
       </div>
     </div>
     <div class="row g-4">
-
       <div class="col-lg-4 col-md-6">
         <div class="related-project-card">
           <div class="related-project-image">
-            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Related Project" class="img-fluid">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=80" alt="Proje 1" class="img-fluid">
           </div>
           <div class="related-project-content">
             <h6>Benzer Proje</h6>
-            <p>Başka bir başarılı proje Web Design.</p>
+            <p>Başka bir başarılı Web Design projesi.</p>
             <a href="portfolio.html" class="text-primary">Portföyü Görüntüle →</a>
           </div>
         </div>
@@ -119,11 +111,11 @@
       <div class="col-lg-4 col-md-6">
         <div class="related-project-card">
           <div class="related-project-image">
-            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Related Project" class="img-fluid">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=500&q=80" alt="Proje 2" class="img-fluid">
           </div>
           <div class="related-project-content">
-            <h6>Başka Bir Proje</h6>
-            <p>Modern teknoloji yığınıyla yenilikçi çözüm.</p>
+            <h6>Modern Çözüm</h6>
+            <p>Yeni nesil teknoloji ile geliştirilen çözüm.</p>
             <a href="portfolio.html" class="text-primary">Portföyü Görüntüle →</a>
           </div>
         </div>
@@ -131,16 +123,15 @@
       <div class="col-lg-4 col-md-6">
         <div class="related-project-card">
           <div class="related-project-image">
-            <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Related Project" class="img-fluid">
+            <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=500&q=80" alt="Proje 3" class="img-fluid">
           </div>
           <div class="related-project-content">
             <h6>Öne Çıkan İş</h6>
-            <p>Olağanüstü sonuçlara sahip ödüllü proje.</p>
+            <p>Başarıyla tamamlanmış ödüllü proje.</p>
             <a href="portfolio.html" class="text-primary">Portföyü Görüntüle →</a>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>

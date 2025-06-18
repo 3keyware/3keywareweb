@@ -2,9 +2,17 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Live Chat - 3keyware</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Chat - 3Keyware</title>
+
+  <!-- Bootstrap CDN (isteğe bağlı) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
 
@@ -13,10 +21,10 @@
     <div class="row">
       <div class="col-lg-8 mx-auto">
         <div class="chat-container">
-          <div class="chat-header">
+          <div class="chat-header d-flex justify-content-between align-items-center">
             <h4><i class="fas fa-comments me-2"></i>Canlı Sohbet</h4>
-            <span class="online-status">
-              <i class="fas fa-circle text-success"></i> Online
+            <span class="online-status text-success">
+              <i class="fas fa-circle me-1"></i> Online
             </span>
           </div>
           <div class="chat-messages" id="chatMessages">
@@ -30,17 +38,17 @@
               </div>
             </div>
           </div>
-          <div class="chat-input-container">
+          <div class="chat-input-container mt-3">
             <div class="input-group">
-              <input type="text" class="form-control" id="chatInput" placeholder="Type your message...">
+              <input type="text" class="form-control" id="chatInput" placeholder="Mesajınızı yazın...">
               <button class="btn btn-primary" id="sendButton">
                 <i class="fas fa-paper-plane"></i>
               </button>
             </div>
           </div>
-          <div class="quick-actions mt-3">
+          <div class="quick-actions mt-4">
             <h6>Kısa Sorular:</h6>
-            <div class="quick-action-buttons">
+            <div class="quick-action-buttons d-flex flex-wrap gap-2">
               <button class="btn btn-outline-primary btn-sm quick-btn" data-message="What services do you offer?">Services</button>
               <button class="btn btn-outline-primary btn-sm quick-btn" data-message="How much does a website cost?">Pricing</button>
               <button class="btn btn-outline-primary btn-sm quick-btn" data-message="How long does development take?">Timeline</button>
@@ -108,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
       setTimeout(() => {
         const response = getBotResponse(message);
         addMessage(response, true);
-      }, 1000);
+      }, 800);
     }
   }
 
