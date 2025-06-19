@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>İletişim - 3keyware</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="static/css/style.css" />
+  <script src="static/js/script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">3<span>key</span>ware</div>
+      <div id="menu-toggle" class="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Ana sayfa</a></li>
+        <li><a href="about.html">Hakkımızda</a></li>
+        <li><a href="services.html">Hizmetler</a></li>
+        <li><a href="contact.html">İletişim</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Giriş -->
+  <section class="contact-hero">
+    <h2><span class="highlight">İletişime</span> Geçin</h2>
+    <p>Dijital vizyonunuzu hayata geçirmeye hazır mısınız? Projenizi görüşelim ve hedeflerinize ulaşmanıza nasıl yardımcı olabileceğimizi keşfedelim.</p>
+  </section>
+
+  <!-- İletişim Formu -->
+  <section class="contact-form">
+    <form action="mailto:3keyware@gmail.com" method="POST" enctype="text/plain">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Ad Soyad</label>
+          <input type="text" id="name" name="name" placeholder="Adınızı girin" />
+        </div>
+        <div class="form-group">
+          <label for="email">E-posta Adresi</label>
+          <input type="email" id="email" name="email" placeholder="E-posta adresiniz" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="subject">Konu</label>
+        <select id="subject" name="subject">
+          <option>Genel Soru</option>
+          <option>Teklif Talebi</option>
+          <option>Destek</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Mesajınız</label>
+        <textarea id="message" name="message" rows="5" placeholder="Bize projenizden bahsedin..."></textarea>
+      </div>
+      <button type="submit" class="btn contact-btn"><i class="fas fa-paper-plane"></i> Mesajı Gönder</button>
+    </form>
+  </section>
+
+  <!-- İletişim Bilgileri -->
+  <section class="contact-info">
+    <div class="info-box">
+      <i class="fas fa-envelope"></i>
+      <h3>Bize E-posta Gönderin</h3>
+      <p>info@3keyware.com</p>
+    </div>
+    <div class="info-box">
+      <i class="fas fa-phone"></i>
+      <h3>Bizi Arayın</h3>
+      <p>+90 (506) 151-7895</p>
+      <p>+1 (555) 987-6543</p>
+    </div>
+    <div class="info-box">
+      <i class="fas fa-map-marker-alt"></i>
+      <h3>Bizi Ziyaret Edin</h3>
+      <p>İzmir Ekonomi Üniversitesi</p>
+      <p>Balçova, İzmir</p>
+    </div>
+  </section>
+
+  <!-- Sosyal Medya -->
+  <section class="contact-social">
+    <h3>Bizi sosyal medyadan takip edin</h3>
+    <div class="social-buttons">
+      <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="mailto:3keyware@gmail.com"><i class="fas fa-envelope"></i> E-posta</a>
+      <a href="#"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+  </section>
+
+  <!-- SSS -->
+  <section class="faq">
+    <h2>Sıkça Sorulan Sorular (SSS)</h2>
+    <p>Sıkça sorulan sorulara hızlı yanıtlar</p>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question">Tipik bir proje ne kadar sürer?</div>
+        <div class="faq-answer">Projenin süresi karmaşıklığa göre değişir, genellikle 2-6 hafta arasında tamamlanır.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Geliştirme süreciniz nasıl işliyor?</div>
+        <div class="faq-answer">Keşif, tasarım, geliştirme ve yayınlama adımlarından oluşur.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Sürekli destek sağlıyor musunuz?</div>
+        <div class="faq-answer">Evet, bakım ve güncellemeler için sürekli destek sunuyoruz.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Hangi teknolojilerle çalışıyorsunuz?</div>
+        <div class="faq-answer">React, Flutter, Unity, Python, PHP ve daha fazlası.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 <span>3keyware</span>. Tüm hakları saklıdır.</p>
+  </footer>
+
+</body>
+</html>
