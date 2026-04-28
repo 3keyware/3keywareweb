@@ -6,7 +6,6 @@ export function Navbar() {
   const location = useLocation();
   const isHome = location.pathname === "/";
 
-  // Navigasyon linklerini doğrudan Türkçe ve statik olarak tanımladık
   const navLinks = [
     { name: "Anasayfa", href: isHome ? "#hero" : "/#hero" },
     { name: "Süreç", href: isHome ? "#mission" : "/#mission" },
@@ -53,7 +52,7 @@ export function Navbar() {
       <div className="flex items-center gap-3 pointer-events-auto">
         {/* Instagram Linki */}
         <a
-          href="https://www.instagram.com/3keyware/" // Buraya kendi kullanıcı adını yaz
+          href="https://www.instagram.com/3keyware/"
           target="_blank"
           rel="noopener noreferrer"
           className="w-10 h-10 rounded-full flex items-center justify-center liquid-glass hover:scale-110 transition-transform cursor-pointer"
