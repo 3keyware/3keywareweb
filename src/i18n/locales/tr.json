@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "home": "Anasayfa",
+    "howItWorks": "Vizyonumuz",
+    "whoAreWe": "Hakkımızda",
+    "ourProjects": "Projelerimiz"
+  },
+  "hero": {
+    "trusted": "",
+    "title": "Dijital <0>Geleceği</0> Tasarlıyoruz",
+    "subtitle": "3Keyware, yüksek performanslı web, mobil ve oyun deneyimleri oluşturmaya odaklanmış butik bir yazılım stüdyosudur.",
+    "inputPlaceholder": "Birlikte çalışalım",
+    "cta": "İletişim",
+    "visionLabel": "Vizyon",
+    "visionText": "<0>İşlevselliğin</0> <0>zarafetle</0> buluştuğu ürünler inşa ediyoruz.",
+    "evolvedTitle": "Yazılım dünyası <0>evrildi</0>. Ya siz?",
+    "quote": "\"Sadece kod yazmıyoruz; yarının zorlukları için dijital çözümler mimarlıyoruz.\"",
+    "projectsBtn": "Projelerimiz"
+  },
+  "members": {
+    "kaan": {
+      "role": "Mobil ve Web Geliştirici",
+      "desc": "Yüksek performanslı çapraz platform mobil uygulamalar ve ölçeklenebilir web mimarileri konusunda uzmanlaşmıştır."
+    },
+    "emin": {
+      "role": "Oyun Geliştirici",
+      "desc": "En yeni oyun motorlarıyla sürükleyici dünyalar ve karmaşık etkileşimli mekanikler tasarlıyor."
+    },
+    "yekta": {
+      "role": "Mobil ve Web Geliştirici",
+      "desc": "Modern dijital ürünler için kusursuz kullanıcı deneyimleri ve sağlam altyapı sistemleri geliştiriyor."
+    }
+  },
+  "search": {
+    "title": "Teknoloji <0>evrildi.</0> Ya siz?",
+    "subtitle": "Dijital dünya artık sadece var olmaktan ibaret değil; mesele fark yaratmak. 3Keyware sizi geleceğe taşıyacak araçları inşa eder.",
+    "tagline": "Sİz çözüm üretmezsenİz, başkaları sİzİn yerİnİze yapacaktır."
+  },
+  "mission": {
+    "text1": "Performansın estetikle buluştuğu bir gelecek inşa ediyoruz — işletmelerin ölçeklendiği, kullanıcıların değer bulduğu ve her satır kodun büyüme için bir temel oluşturduğu bir gelecek.",
+    "text2": "Tasarım, mantık ve inovasyonun mükemmel bir uyumla aktığı bir stüdyo — sıfır sürtünme ve mükemmelliğe odaklanan amansız bir tutkuyla.",
+    "highlights": ["performansın", "estetikle", "buluştuğu"]
+  },
+  "solution": {
+    "label": "Uzmanlık",
+    "title": "<0>Sınır tanımayan</0> yazılımlar",
+    "features": {
+      "web": {
+        "title": "Web Platformları",
+        "desc": "Modern teknolojilerle oluşturulmuş sağlam, ölçeklenebilir ve yıldırım hızında web uygulamaları."
+      },
+      "mobile": {
+        "title": "Mobil Deneyimler",
+        "desc": "Her cihazda doğal hissettiren, yüksek performanslı mobil çözümler."
+      },
+      "game": {
+        "title": "Oyun Geliştirme",
+        "desc": "Etkileşimin sınırlarını zorlayan 2D ve 3D sürükleyici oyunlar."
+      },
+      "strategy": {
+        "title": "Dijital Strateji",
+        "desc": "Konsept aşamasından küresel çapta yayına kadar kapsamlı yol haritaları."
+      }
+    }
+  },
+  "cta": {
+    "title": "Kendi <0>Mirasınızı</0> İnşa Edin",
+    "subtitle": "Vizyonunuza sizin kadar değer veren bir ekiple çalışın. Birlikte sıra dışı projeler ortaya koyalım.",
+    "contactBtn": "Bize Katılın",
+    "viewProjectsBtn": "Projeleri İncele"
+  },
+  "footer": {
+    "desc": "3Keyware, tasarım odaklı bir yazılım geliştirme stüdyosudur. İddialı fikirleri kusursuz dijital gerçekliklere dönüştürüyoruz.",
+    "capabilities": "Yetkinlikler",
+    "contact": "",
+    "rights": "© 2026 3Keyware. Tüm hakları saklıdır.",
+    "links": {
+      "privacy": "Gizlilik Politikası",
+      "terms": "Kullanım Şartları",
+      "legal": "Yasal Uyarı",
+      "webDev": "Web Geliştirme",
+      "mobilePlatforms": "Mobil Platformlar",
+      "gameDesign": "Oyun Tasarımı",
+      "uiux": "UI / UX Tasarımı",
+      "about": "",
+      "projects": "",
+      "careers": ""
+    }
+  },
+  "projects": {
+    "title": "Seçkin <0>Projelerimiz</0>",
+    "subtitle": "Dünya çapındaki vizyoner ortaklarımız için inşa ettiğimiz modern dijital çözümler.",
+    "visit": "Siteyi Ziyaret Et",
+    "clickLink": "LİNKE TIKLA"
+  }
+}
