@@ -33,7 +33,7 @@ function HomePage() {
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/3keywareweb">
       <ScrollToTop />
       <main className="min-h-screen bg-background selection:bg-white selection:text-black">
         <Routes>
